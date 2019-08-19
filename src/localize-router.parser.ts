@@ -205,7 +205,7 @@ export abstract class LocalizeParser {
    * @param path
    * @returns {string}
    */
-  translateRoute(path: string): string {
+  translateRoute(path: any): string {
     const queryParts = path.split('?');
     if (queryParts.length > 2) {
       throw 'There should be only one query parameter block in the URL';
